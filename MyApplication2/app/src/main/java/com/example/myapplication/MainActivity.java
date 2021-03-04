@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
@@ -9,6 +10,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.example.myapplication.data.local.db.AppDatabase;
 import com.example.myapplication.data.local.db.ProductLocal;
@@ -16,13 +19,16 @@ import com.example.myapplication.data.local.db.ProductLocalDao;
 import com.example.myapplication.ui.home.HomeActivity;
 import com.example.myapplication.ui.login.LoginActivity;
 import com.example.myapplication.utils.AppConstant;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intentGoToScreenHome = new Intent(this, HomeActivity.class);
         intentGoToScreenLogin.putExtra(AppConstant.TIME_FROM_WELCOME,getTimeNow());
 
+
+
         AppDatabase database = Room.databaseBuilder(this, AppDatabase.class, "myDatabaseRoom")
                 .allowMainThreadQueries()
                 .build();
@@ -40,8 +48,6 @@ public class MainActivity extends AppCompatActivity {
         //itemDAO.insertAll(productLocal);
 
         List<ProductLocal> items = itemDAO.loadAllByIds("01");
-        Log.d("HUY",items.get(0).getTENSANPHAM()+ " Đây là sản phẩm trong db");
-        System.out.println(items.get(0).getTENSANPHAM()+ " Đây là sản phẩm trong db");
         //Create SharePreferences
         SharedPreferences sharedPref = getSharedPreferences("StatusLogin", Context.MODE_PRIVATE);
         boolean active = sharedPref.getBoolean("status", false);

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.DemoUIFragment"
+    android:background="#FFFFFF">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:layout_margin="30dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_tab_view"
+        >
+    </ImageButton>
+
+    <ImageButton
+        android:src="@drawable/ic_like"
+        android:scaleType="centerInside"
+        android:paddingBottom="20dp"
+        android:paddingEnd="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="120dp"
+        android:elevation="2dp"
+        android:background="@drawable/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:targetApi="lollipop"
+        tools:ignore="RtlSymmetry" />
+    <ImageButton
+        android:src="@drawable/ic_like"
+        android:scaleType="centerInside"
+        android:paddingBottom="20dp"
+        android:paddingEnd="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="220dp"
+        android:background="@drawable/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        tools:ignore="RtlSymmetry" />
+    <ImageButton
+        android:src="@drawable/ic_like"
+        android:scaleType="centerInside"
+        android:paddingBottom="20dp"
+        android:paddingEnd="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="320dp"
+        android:background="@drawable/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <FrameLayout
+        android:background="@drawable/ic_custom"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="180dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_like"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout
+        android:background="@drawable/ic_action_bus"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/ic_bus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/buttonClickBus"
+        android:background="@drawable/ic_action_bus"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/buttonClickBusContent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/ic_bus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/todo" />
+    </FrameLayout>
+
+    <View
+        android:paddingTop="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray" />
+
+    <RadioGroup
+        android:background="@drawable/pink_out_line"
+        android:layout_marginTop="200dp"
+        android:checkedButton="@+id/offer"
+        android:id="@+id/toggle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:padding="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginStart="1dp"
+            android:id="@+id/search"
+            android:background="@drawable/toggle_widget_background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="ON"
+            android:textSize="24sp"
+            android:textColor="#2F7773" />
+
+        <RadioButton
+            android:textSize="24sp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/offer"
+            android:textColorHighlight="#2F7773"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="OFF"
+            android:textColor="#2F7773" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="fdsfsadfsadfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444" />
+        <TextView
+            android:text="fdsfsadfsadfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444"/>
+        <TextView
+            android:text="fdsfsadfsadfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444"/>
+        <TextView
+            android:text="fdsfsadfsadfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

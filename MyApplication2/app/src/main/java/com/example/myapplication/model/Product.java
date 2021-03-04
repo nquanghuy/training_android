@@ -19,11 +19,11 @@ public class Product {
     @SerializedName("HINHANH")
     private String HINHANH;
 
-    @SerializedName("....")
-    private LocalDateTime expriedDate;
-
-    @SerializedName("....")
-    private Category category;
+//    @SerializedName("....")
+//    private LocalDateTime expriedDate;
+//
+//    @SerializedName("....")
+//    private Category category;
 
     public Product() {
     }
