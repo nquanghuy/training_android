@@ -21,8 +21,6 @@ public class SanPham {
     private String NGAYMUA;
     @SerializedName("NHACUNGCAP")
     private NhaCungCap NHACUNGCAP;
-
-
     private LocalDate timeDate;
     public SanPham() {
     }

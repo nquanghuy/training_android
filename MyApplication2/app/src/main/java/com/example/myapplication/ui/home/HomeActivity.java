@@ -44,6 +44,7 @@ public class HomeActivity extends AppCompatActivity implements setTextChange{
 
         LinearLayout bottomSheet = findViewById ( R.id.bottom_sheet_behavior_id);
         bottomSheetBehavior =  BottomSheetBehavior.from(bottomSheet);
+
         bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(View view, int i) {

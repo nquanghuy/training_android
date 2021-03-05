@@ -1,34 +1,36 @@
 package com.example.myapplication.model;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @Data
+@NoArgsConstructor
 public class NhaCungCap {
+
     @SerializedName("TENNHACUNGCAP")
     private String TENNHACUNGCAP;
+
+    @Expose(serialize = false)
     @SerializedName("DIACHI")
     private String DIACHI;
 
-    public NhaCungCap() {
-    }
+    @SerializedName("NGAYTHANHLAP")
+    @Expose(serialize = false)
+    private LocalDateTime NGAYTHANHLAP;
 
-    public String getTENNHACUNGCAP() {
-        return TENNHACUNGCAP;
-    }
+    @SerializedName("LOAI")
+    @Expose(serialize = false)
+    private Loai xepLoai;
 
-    public void setTENNHACUNGCAP(String TENNHACUNGCAP) {
-        this.TENNHACUNGCAP = TENNHACUNGCAP;
-    }
+    @SerializedName("SOLUONGCHINHANH")
+    @Expose(serialize = false)
+    private Integer soLuongChiNhanh;
 
-    public String getDIACHI() {
-        return DIACHI;
-    }
-
-    public void setDIACHI(String DIACHI) {
-        this.DIACHI = DIACHI;
-    }
 }

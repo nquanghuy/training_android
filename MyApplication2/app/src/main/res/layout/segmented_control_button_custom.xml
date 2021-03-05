@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="140dp"
+android:layout_height="32dp"
+android:layout_gravity="center"
+android:maxWidth="140dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+<androidx.appcompat.widget.SwitchCompat
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginTop="3dp"
+    android:id="@+id/sw_fall_end_record"
+    android:layout_width="70dp"
+    android:layout_height="match_parent"
+    android:scaleX="2"
+    android:scaleY="2.2"
+    android:thumb="@drawable/sw_track_custom"
+    app:track="@drawable/sw_thumb_custom"
+    tools:ignore="RtlHardcoded" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/tv_left_segmented_control"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="可"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_right_segmented_control"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="不可"
+        android:textSize="13sp" />
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
